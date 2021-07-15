@@ -169,6 +169,10 @@ img {
     letter-spacing: 0.03em;
     color: var(--white);
   }
+  .specialization-item {
+    flex-basis: calc(100% - 3 * 30px / 3 );
+    margin-right: 30px;
+  }
   .advantages {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -297,7 +301,7 @@ img {
     margin-left: 8px;
   }
   .button:focus,
-  button:hover {
+   button:hover {
     background: var(--style-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
       0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -318,8 +322,8 @@ img {
     line-height: 36px;
     letter-spacing: 0.06em;
     color: var(--background);
-    margin-top: 20px;
   }
+
   .card-legend {
     font-family: "Roboto";
     font-style: normal;
@@ -358,36 +362,18 @@ img {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 0;
+    margin:-30px 0 0 -30px;
     padding: 0;
   }
   .cards {
-    margin-bottom: 30px;
-    margin-right: 25px;
-    border: 1px solid var(--card-border-color);
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-basis: calc((100% - 90px) / 3);
   }
-  .cards:nth-child(3) {
-    margin-right: 0px;
-  }
-  .cards:nth-child(6) {
-    margin-right: 0px;
-  }
-  .cards:nth-child(9) {
-    margin-right: 0px;
-  }
-  .cards:nth-child(7) {
-    margin-bottom: 0px;
-  }
-  .cards:nth-child(8) {
-    margin-bottom: 0px;
-  }
-  .cards:nth-child(9) {
-    margin-bottom: 0px;
-  }
+
   .grid-container {
     padding-bottom: 94px;
-    margin: 0;
-    padding: 0;
+
   }
   .border {
     border-bottom-width: 1px;
@@ -398,7 +384,10 @@ img {
     color: #ececec;
   }
   .card-container-info {
+    padding-top: 20px;
     padding-right: 24px;
     padding-left: 24px;
-    
+    border-left: 1px solid var(--card-border-color);
+    border-bottom: 1px solid var(--card-border-color);
+    border-right: 1px solid var(--card-border-color);
   }
