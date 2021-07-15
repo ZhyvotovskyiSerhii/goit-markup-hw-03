@@ -20,16 +20,13 @@
   </head>
     <body>
         <!-- HEADER -->
-        <header class="header">
-            <div class="container header-container">
+        <header class="container header-container">
             <nav class="nav">
-                <div class="logo"><a class="link"
-                        href="./index.html"><span
-                            class="first-part-logo">Web</span><span
+                <a class="logo link"
+                        href="./index.html">Web<span
                             class="second-part-logo">Studio</span></a>
-                </div>
                 <ul class="menu">
-                    <li class="menu-item"><a class="menu-page"
+                    <li class="menu-item"><a class="menu-page active"
                             href="./index.html">Студия</a></li>
                     <li class="menu-item"><a class="menu-page"
                             href="./portfolio.html">Портфолио</a></li>
@@ -44,13 +41,12 @@
                         096 111 11
                         11</a></li>
             </ul>
-        </div>
         </header>
         <!-- MAIN -->
         <main>
             <section class="hero">
                 <div class="container">
-                    <h1 class="page-title-hero">Эффективные решения для вашего
+                    <h1 class="page-title-hero best-choice">Эффективные решения для вашего
                         бизнеса</h1>
                     <button type="button" class="main button">Заказать услугу</button>
                 </div>
@@ -59,25 +55,25 @@
                 <div class="container">
                     <ul class="advantages-list">
                         <li>
-                            <h3>ВНИМАНИЕ К ДЕТАЛЯМ</h3>
+                            <h3 class="advantages-title">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
                             <p class="advantages-description">Идейные
                                 соображения, а также начало повседневной
                                 работы по формированию позиции.</p>
                         </li>
                         <li>
-                            <h3>ПУНКТУАЛЬНОСТЬ</h3>
+                            <h3 class="advantages-title">ПУНКТУАЛЬНОСТЬ</h3>
                             <p class="advantages-description">Задача
                                 организации, в особенности же рамки и
                                 место обучения кадров влечет за собой.</p>
                         </li>
                         <li>
-                            <h3>ПЛАНИРОВАНИЕ</h3>
+                            <h3 class="advantages-title">ПЛАНИРОВАНИЕ</h3>
                             <p class="advantages-description">Равным образом
                                 консультация с широким активом в
                                 значительной степени обуславливает.</p>
                         </li>
                         <li>
-                            <h3>СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
+                            <h3 class="advantages-title">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
                             <p class="advantages-description">Значимость этих
                                 проблем настолько очевидна, что
                                 реализация плановых заданий.</p>
@@ -97,47 +93,54 @@
                 </div>
             </section>
             <!-- TEAM -->  
+            <div class="container">
             <section class="team-section">
-                <div class="container">
                     <h2 class="page-title">Наша команда</h2>
                     <ul class="team">
-                        <li class="item">
+                        <li class="item worker">
                             <div class="worker-card">
                                 <img src="images/our-team/photo1.jpg" width="270" alt="фото игоря">
+                                <div class="team-descr">
                                 <h3 class="team-subtitle">Игорь Демьяненко</h3>
                                 <p lang="en" class="team-text">Product designer</p>
+                                </div>
                             </div>
                         </li>
-                        <li class="item">
+                        <li class="item worker">
                             <div class="worker-card">
                                 <img src="images/our-team/photo2.jpg" width="270" alt="Ольга Репина">
+                             <div class="team-descr">
                                 <h3 class="team-subtitle">Ольга Репина</h3>
                                 <p lang="en" class="team-text">Frontend Developer</p>
+                             </div>  
                             </div>
                         </li>
-                        <li class="item">
+                        <li class="item worker">
                             <div class="worker-card">
                                 <img src="images/our-team/photo3.jpg" width="270" alt="фото николая">
+                                <div class="team-descr">
                                 <h3 class="team-subtitle">Николай Тарасов</h3>
                                 <p lang="en" class="team-text">Marketing</p>
+                                </div>
                             </div>
                         </li>
-                        <li class="item">
+                        <li class="item worker">
                             <div class="worker-card">
                                 <img src="images/our-team/photo4.jpg" alt="фото михаила" width="270">
+                                <div class="team-descr">
                                 <h3 class="team-subtitle">Михаил Ермаков</h3>
                                 <p lang="en" class="team-text">UI Designer</p>
+                                </div>
                             </div>
                         </li>
                     </ul>
+                </section>
                 </div>
-            </section>
         </main>
         <!-- FOOTER -->
-        <footer class="footer">
-            <div class="container">
-                <a class="footer-logo link" href="./index.html"><span
-                    class="first-part-logo">Web</span><span
+        <footer class="container footer">
+                <a class="logo link"
+                        href="./index.html">Web<span
                     class="second-part-logo-footer">Studio</span></a>
             <address class="our-contacts">
                 <ul class="our-contacts-list">
@@ -158,7 +161,6 @@
                     </li>
                 </ul>
             </address>
-            </div>
         </footer>
     </body>
 </html>

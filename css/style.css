@@ -5,6 +5,7 @@
     --white: #ffffff;
     --color-contacts: #757575;
     --card-border-color: #EEEEEE;
+    --accent-color: #2196f3;
   }
   
 h1,
@@ -61,10 +62,9 @@ img {
   ul {
     list-style-type: none;
   }
-  .first-part-logo {
+  .logo {
     font-family: "Raleway";
     font-style: normal;
-
     font-weight: bold;
     font-size: 26px;
     line-height: 31px;
@@ -73,13 +73,9 @@ img {
   }
   
   .second-part-logo {
-    font-family: "Raleway";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 31px;
-    letter-spacing: 0.03em;
+
     color: var(--main-color);
+
   }
   
   .header-container {
@@ -87,6 +83,13 @@ img {
     justify-content: space-between;
     align-items: center;
   }
+
+  .best-choice {
+    max-width: 696px;
+    margin: auto;
+
+  }
+
   .nav {
     display: flex;
     justify-content: space-between;
@@ -108,8 +111,12 @@ img {
     padding-top: 32px;
     padding-bottom: 32px;
   }
+  .menu-page.active {
+    color: var(--accent-color);
+}
   .contacts {
     display: flex;
+    margin-left: auto;
     font-family: "Roboto";
     font-style: normal;
     font-weight: normal;
@@ -188,14 +195,20 @@ img {
   }
   .advantages {
     padding-top: 94px;
-    padding-bottom: 94px;
+    padding-bottom: 47px;
+    color: var(--main-color);
+    flex-basis: calc((100% - 120px) / 4);
+
+  }
+
+  .advantages-title {
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.03em;
-    color: var(--main-color);
   }
+
   .advantages-description {
     margin-top: 10px;
     font-family: "Roboto";
@@ -236,20 +249,36 @@ img {
     text-align: center;
     padding-bottom: 30px;
   }
+
+  .worker {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
+}
+  .worker:not(:last-child) {
+  margin-right: 50px;
+}
+
+}
   .worker-card {
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+  }
+  .team-descr {
+
+    
   }
   .team {
     display: flex;
-    justify-content: space-between;
+    margin-top: 50px;
+
   }
+
   .team-section {
     padding-top: 94px;
     padding-bottom: 94px;
+    flex-basis: calc((100% - 4 * 30px) - 30px);
   }
   .activity {
+    padding-top: 47px;
     padding-bottom: 94px;
   }
   .team.container li:not(:first-child) {
@@ -267,7 +296,6 @@ img {
 
   }
   .page-title-hero {
-    width: 696px;
     font-family: "Roboto";
     font-style: normal;
     font-weight: 900;
@@ -277,10 +305,9 @@ img {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--white);
-    margin: 0 auto;
   }
+
   .page-title {
-    margin-bottom: 50px;
     text-align: center;
     font-family: "Roboto";
     font-style: normal;
@@ -293,7 +320,6 @@ img {
   }
   .address-item {
     margin-bottom: 9px;
-    margin-top: 9px;
   }
 
   .button-filter {
@@ -365,6 +391,10 @@ img {
   .address:not(:last-child) {
     margin-bottom: 10px;
   }
+
+  .our-contacts {
+    margin-top: 20px;
+  }
   
   .button-panel {
     padding-top: 94px;
@@ -374,6 +404,10 @@ img {
     display: flex;
     justify-content: center;
     align-content: center;
+    margin-top: 94px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
   }
   .filter-grid {
     display: flex;
@@ -387,6 +421,10 @@ img {
     margin-top: 30px;
     margin-left: 30px;
     flex-basis: calc((100% - 90px) / 3);
+  }
+  .filter-grid.item-grid {
+    margin-bottom: 94px;
+    
   }
 
   .grid-container {
@@ -403,8 +441,10 @@ img {
   }
   .card-container-info {
     padding-top: 20px;
+    padding-bottom: 20px;
     padding-right: 24px;
     padding-left: 24px;
+    box-sizing: border-box;
     border-left: 1px solid var(--card-border-color);
     border-bottom: 1px solid var(--card-border-color);
     border-right: 1px solid var(--card-border-color);
