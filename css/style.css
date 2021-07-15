@@ -79,7 +79,7 @@ img {
     align-items: center;
   }
   .menu {
-    padding-left: 93px;
+    margin-left: 93px;
     display: flex;
     font-family: "Roboto";
     font-style: normal;
