@@ -54,6 +54,9 @@ img {
     width: 1px !important;
     overflow: hidden;
   }
+  address {
+    font-style: normal;
+  }
 
   ul {
     list-style-type: none;
@@ -145,7 +148,6 @@ img {
     color: var(--white);
   }
   .address-street {
-    font-family: "Roboto";
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -293,6 +295,7 @@ img {
     margin-bottom: 9px;
     margin-top: 9px;
   }
+
   .button-filter {
     border: none;
     padding-right: 22px;
@@ -335,6 +338,8 @@ img {
     letter-spacing: 0.06em;
     color: var(--background);
   }
+
+
 
   .card-legend {
     font-family: "Roboto";
