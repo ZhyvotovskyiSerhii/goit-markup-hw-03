@@ -44,6 +44,17 @@ img {
     font-family: "Roboto", sans-serif;
   }
 
+  .hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+  }
+
   ul {
     list-style-type: none;
   }
@@ -282,6 +293,7 @@ img {
     margin-bottom: 9px;
     margin-top: 9px;
   }
+  
   .button-filter {
     border: none;
     padding-right: 22px;
@@ -324,6 +336,8 @@ img {
     letter-spacing: 0.06em;
     color: var(--background);
   }
+
+
 
   .card-legend {
     font-family: "Roboto";
