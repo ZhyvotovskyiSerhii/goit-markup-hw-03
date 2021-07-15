@@ -349,6 +349,7 @@ img {
   .address:not(:last-child) {
     margin-bottom: 10px;
   }
+  
   .button-panel {
     padding-top: 94px;
     padding-bottom: 50px;
