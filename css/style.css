@@ -5,6 +5,7 @@
     --white: #ffffff;
     --color-contacts: #757575;
     --card-border-color: #EEEEEE;
+    --accent-color: #2196f3;
   }
   
 h1,
@@ -54,14 +55,17 @@ img {
     width: 1px !important;
     overflow: hidden;
   }
+  address {
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.6);
+  }
 
   ul {
     list-style-type: none;
   }
-  .first-part-logo {
+  .logo {
     font-family: "Raleway";
     font-style: normal;
-
     font-weight: bold;
     font-size: 26px;
     line-height: 31px;
@@ -70,13 +74,9 @@ img {
   }
   
   .second-part-logo {
-    font-family: "Raleway";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 31px;
-    letter-spacing: 0.03em;
+
     color: var(--main-color);
+
   }
   
   .header-container {
@@ -84,6 +84,13 @@ img {
     justify-content: space-between;
     align-items: center;
   }
+
+  .best-choice {
+    max-width: 696px;
+    margin: auto;
+
+  }
+
   .nav {
     display: flex;
     justify-content: space-between;
@@ -105,8 +112,12 @@ img {
     padding-top: 32px;
     padding-bottom: 32px;
   }
+  .menu-page.active {
+    color: var(--accent-color);
+}
   .contacts {
     display: flex;
+    margin-left: auto;
     font-family: "Roboto";
     font-style: normal;
     font-weight: normal;
@@ -140,12 +151,11 @@ img {
     width: 200px;
     height: 50px;
     background: var(--style-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    border-color: rgba(0, 0, 0 ,0);
     color: var(--white);
   }
   .address-street {
-    font-family: "Roboto";
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -153,7 +163,7 @@ img {
     letter-spacing: 0.03em;
     color: var(--white);
   }
-  .footer {
+  footer {
     background-color: var(--background);
     padding-bottom: 60px;
     padding-top: 60px;
@@ -181,19 +191,27 @@ img {
     color: var(--white);
   }
   .specialization-item {
-    flex-basis: calc(100% - 3 * 30px / 3 );
-    margin-right: 30px;
+    flex-basis: calc((100% - 90px) / 3);
+    margin-left: 30px;
+    margin-top: 30px;
   }
+
   .advantages {
     padding-top: 94px;
-    padding-bottom: 94px;
+    padding-bottom: 47px;
+    color: var(--main-color);
+    flex-basis: calc((100% - 120px) / 4);
+
+  }
+
+  .advantages-title {
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.03em;
-    color: var(--main-color);
   }
+
   .advantages-description {
     margin-top: 10px;
     font-family: "Roboto";
@@ -204,12 +222,20 @@ img {
     letter-spacing: 0.03em;
     color: var(--color-contacts);
   }
-  .advantages li:nth-child(n + 2) {
-    margin-left: 30px;
-  }
+
   
   .advantages-list {
     display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+  .advantages-lest-text {
+    flex-basis: calc((100% - 120px) / 4);
+    margin-left: 30px;
+    margin-top: 30px;
+
+
   }
   .team-subtitle {
     display: block;
@@ -220,8 +246,7 @@ img {
     letter-spacing: 0.03em;
     color: var(--main-color);
     text-align: center;
-    padding-bottom: 10px;
-    padding-top: 30px;
+    margin-bottom: 10px;
   }
   .team-text {
     display: block;
@@ -232,27 +257,67 @@ img {
     letter-spacing: 0.03em;
     color: var(--color-contacts);
     text-align: center;
-    padding-bottom: 30px;
   }
+
+  .worker {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  flex-basis: calc((100% - 120px) / 4);
+  margin-left: 30px;
+  margin-top: 30px;
+  border-radius: 0px 0px 4px 4px;
+}
+
+  .worker:not(:last-child) {
+    
+  margin-left: 30px;
+}
+
+
+}
   .worker-card {
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    
   }
+  .team-descr {
+    padding-right: 10px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    border-left: 1px solid var(--card-border-color);
+    border-bottom: 1px solid var(--card-border-color);
+    border-right: 1px solid var(--card-border-color);
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+  .team-spec {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+
   .team {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+    
   }
+  
+  .team-list {
+
+  }
+
   .team-section {
     padding-top: 94px;
     padding-bottom: 94px;
+    background-color: #f5f4fa;
+
   }
   .activity {
+    padding-top: 47px;
     padding-bottom: 94px;
   }
-  .team.container li:not(:first-child) {
-    margin-left: 30px;
-  }
+
   .footer.contacts.item.link {
     margin-top: 9px;
   }
@@ -265,7 +330,6 @@ img {
 
   }
   .page-title-hero {
-    width: 696px;
     font-family: "Roboto";
     font-style: normal;
     font-weight: 900;
@@ -275,10 +339,9 @@ img {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--white);
-    margin: 0 auto;
   }
+
   .page-title {
-    margin-bottom: 50px;
     text-align: center;
     font-family: "Roboto";
     font-style: normal;
@@ -288,14 +351,15 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-color);
+    margin-bottom: 50px;
   }
   .address-item {
     margin-bottom: 9px;
-    margin-top: 9px;
   }
-  
+
   .button-filter {
-    border: none;
+    border-radius: 4px;
+    border-color: rgba(0, 0, 0 ,0);
     padding-right: 22px;
     padding-left: 22px;
     padding-top: 6px;
@@ -312,6 +376,8 @@ img {
   .button-block:not(:first-child) {
     margin-left: 8px;
   }
+
+
   .button:focus,
    button:hover {
     background: var(--style-color);
@@ -323,7 +389,7 @@ img {
     color: var(--white);
   }
   
-  button:focus {
+  .button:focus {
     border: none;
     outline: none;
   }
@@ -363,6 +429,14 @@ img {
   .address:not(:last-child) {
     margin-bottom: 10px;
   }
+
+  .our-contacts {
+    margin-top: 30px;
+  }
+  .buttons {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
   
   .button-panel {
     padding-top: 94px;
@@ -372,23 +446,36 @@ img {
     display: flex;
     justify-content: center;
     align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    
   }
+  .button-filter:hover,
+  .button-filter:focus {
+    background: var(--style-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    color: var(--white);
+  }
+
+
+
+  
   .filter-grid {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     margin:-30px 0 0 -30px;
-    padding: 0;
   }
   .cards {
     margin-top: 30px;
     margin-left: 30px;
     flex-basis: calc((100% - 90px) / 3);
-  }
-
-  .grid-container {
-    padding-bottom: 94px;
   }
 
   .border {
@@ -401,8 +488,10 @@ img {
   }
   .card-container-info {
     padding-top: 20px;
+    padding-bottom: 20px;
     padding-right: 24px;
     padding-left: 24px;
+    box-sizing: border-box;
     border-left: 1px solid var(--card-border-color);
     border-bottom: 1px solid var(--card-border-color);
     border-right: 1px solid var(--card-border-color);

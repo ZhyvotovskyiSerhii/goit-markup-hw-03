@@ -15,18 +15,15 @@
   </head>
     <body>
         <!-- HEADER -->
-        <header class="header">
-            <div class="container header-container">
+        <header class="container header-container border">
                 <nav class="nav">
-                    <div class="logo"><a class="link"
-                            href="./index.html"><span
-                                class="first-part-logo">Web</span><span
+                    <a class="logo link"
+                    href="./index.html">Web<span
                                 class="second-part-logo">Studio</span></a>
-                    </div>
                     <ul class="menu">
                         <li class="menu-item"><a class="menu-page"
                                 href="./index.html">Студия</a></li>
-                        <li class="menu-item"><a class="menu-page"
+                        <li class="menu-item"><a class="menu-page active"
                                 href="./portfolio.html">Портфолио</a></li>
                         <li class="menu-item"><a class="menu-page" href="">Контакты</a></li>
                     </ul>
@@ -39,14 +36,11 @@
                             096 111 11
                             11</a></li>
                 </ul>
-            </div>
-        </header>
-        <div class="border">     
-        </div>
+        </header>   
         <!-- панель вкладок -->
         <main>
-            <div class="container">
-                <section class="button-panel">
+                <section class="buttons">
+                    <div class="container">
                     <h1 class="hidden">Портфолио</h1>
                         <ul class="filter-button">
                             <li class="button-block">
@@ -65,11 +59,8 @@
                                 <button type="button" class="button-filter">Маркетинг</button>
                             </li>
                         </ul>
-                </section>
-            </div> 
+
             <!-- преимущества -->
-            <section class="grid-container">
-                <div class="container">
                     <ul class="filter-grid item-grid">
                         <li class="cards">
                             <img
@@ -189,17 +180,18 @@
                             </div>
                         </li>
                     </ul>
-                    </div>
+                </div>
                 </section>
             </main>
             <!-- FOOTER -->
-           <footer class="footer">
+           <footer>
             <div class="container">
-                <a class="footer-logo link" href="./index.html"><span
-                    class="first-part-logo">Web</span><span
+                <div class="container-footer">
+                <a class="logo link"
+                        href="./index.html">Web<span
                     class="second-part-logo-footer">Studio</span></a>
-                <address>
-                <ul>
+            <address class="our-contacts">
+                <ul class="our-contacts-list">
                     <li class="address-item">
                         <a class="address-street" href="https://goo.gl/maps/Y9f9cv7vFTfed6qeA" rel="noreferrer noopener">г. Киев, пр-т Леси
                             Украинки,
@@ -209,7 +201,7 @@
                         <a class="address"
                             href="mailto:info@example.com">info@example.com</a>
                     </li>
-                    <li class="address-item">
+                    <li>
                         <a class="address"
                             href="tel:+380991111111">+38
                             099
@@ -217,6 +209,7 @@
                     </li>
                 </ul>
             </address>
+            </div>  
             </div>
         </footer>
         </body>
